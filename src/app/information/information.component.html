@@ -1,0 +1,5 @@
+<div class="film" *ngFor="let film of searchTitle">
+  <h2>{{ film.title }}</h2>
+  <img [src]="film.image" [alt]="film.title" />
+  <p>{{ film.description }}</p>
+</div>

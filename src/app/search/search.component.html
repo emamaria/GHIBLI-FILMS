@@ -1,0 +1,11 @@
+<!-- <button (click)="click()">click</button> -->
+
+<div class="inputContainer">
+  <input type="text" #title (keyup.enter)="search()" />
+</div>
+
+<div class="titlesContainer">
+  <p *ngFor="let title of titles">
+    {{ title.title }}
+  </p>
+</div>

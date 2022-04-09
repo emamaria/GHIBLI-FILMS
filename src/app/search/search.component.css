@@ -1,0 +1,57 @@
+.titlesContainer{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titlesContainer p{
+    margin: 30px;
+}
+
+.inputContainer{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+   
+}
+
+.inputContainer input{
+    width: 400px;
+    height: 45px;
+     background-color: aquamarine;
+     border-radius: 25px;
+     margin-top: 60px;
+     margin-bottom: 60px;
+
+}
+
+
+@media (max-width: 600px) {
+
+    .titlesContainer{
+        font-size: 15px;
+        flex-direction: column;
+        align-items: center;
+     
+    }
+
+    .titlesContainer p{
+        margin: 5px;
+    }
+
+    .inputContainer input{
+        width: 200px;
+        height: 25px;
+         background-color: aquamarine;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         
+    }
+    
+    
+    
+  }
