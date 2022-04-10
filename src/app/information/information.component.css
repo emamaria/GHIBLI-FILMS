@@ -5,6 +5,8 @@
     align-items: center;
     font-size: 40px;
     text-align: center;
+  
+   
 }
 
 .film img{
@@ -15,6 +17,9 @@
 .film p{
     text-align: center;
     font-size: 25px;
+    background-color: #007a53;
+    border-radius: 15px;
+   
 
 }
 
