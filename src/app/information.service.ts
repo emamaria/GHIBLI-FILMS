@@ -43,7 +43,7 @@ export class InformationService {
   searchFilm(movie: any){
    this.searchTitle =  [...this.films].filter( film =>  film.title.toLowerCase().includes(movie.toLowerCase()) )
 
-
+  
    console.log("title", this.searchTitle,  [...this.films]);
    
  }

@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, EventEmitter, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { InformationService } from '../information.service';
 
 @Component({
@@ -8,11 +8,15 @@ import { InformationService } from '../information.service';
 })
 export class SearchComponent implements OnInit {
 
+
+
   @ViewChild("title") title! :ElementRef<HTMLInputElement>
 
   prevValue: string = ""
 
   buttonValue: boolean = false;
+
+  style: string = "green"
 
   constructor(private info: InformationService) { }
 
@@ -46,7 +50,9 @@ export class SearchComponent implements OnInit {
    this.buttonValue  = true
   }
 
-  
+  changeColor(){
+    this.style = (this.style === "green") ? "black" : "green";
+  }
 
  
 }

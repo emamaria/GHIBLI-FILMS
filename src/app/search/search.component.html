@@ -1,4 +1,6 @@
-<!-- <button (click)="click()">click</button> -->
+<button class="dark-mode-button" (click)="changeColor()">
+  Titles Dark Mode
+</button>
 
 <div class="inputContainer">
   <input
@@ -18,7 +20,10 @@
 </button>
 
 <div *ngIf="title.value == prevValue || buttonValue" class="titlesContainer">
-  <p *ngFor="let title of titles">
+  <p
+    [ngClass]="style === 'black' ? 'black-theme' : 'green-theme'"
+    *ngFor="let title of titles"
+  >
     {{ title.title }}
   </p>
 </div>
