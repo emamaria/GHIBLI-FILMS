@@ -9,7 +9,15 @@
   />
 </div>
 
-<div class="titlesContainer">
+<button
+  class="showTitles"
+  *ngIf="title.value !== prevValue && !buttonValue"
+  (click)="ShowTitles()"
+>
+  Show Titles
+</button>
+
+<div *ngIf="title.value == prevValue || buttonValue" class="titlesContainer">
   <p *ngFor="let title of titles">
     {{ title.title }}
   </p>

@@ -10,10 +10,6 @@ export class InformationComponent implements OnInit {
 
 
 
-  // get films(){
-  //      return this.info.films
-  // }
-
   get searchTitle(){
     return this.info.searchTitle
 }

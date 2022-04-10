@@ -10,6 +10,10 @@ export class SearchComponent implements OnInit {
 
   @ViewChild("title") title! :ElementRef<HTMLInputElement>
 
+  prevValue: string = ""
+
+  buttonValue: boolean = false;
+
   constructor(private info: InformationService) { }
 
   ngOnInit(): void {
@@ -30,11 +34,19 @@ export class SearchComponent implements OnInit {
 
     this.info.searchFilm(this.title.nativeElement.value)
 
+    this.prevValue = this.title.nativeElement.value
+
     this.title.nativeElement.value = ""
 
    
     
   }
+
+  ShowTitles(){
+   this.buttonValue  = true
+  }
+
+  
 
  
 }

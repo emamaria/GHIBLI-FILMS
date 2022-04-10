@@ -6,13 +6,15 @@
     flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color:  #007a53;
     border-radius: 15px;
    
 }
 
 .titlesContainer p{
     margin: 20px;
+    background-color:  #007a53;
+    padding: 10px;
+    border-radius: 25px ;
 }
 
 .inputContainer{
@@ -41,6 +43,20 @@
    background-color:  lightcyan;
 }
 
+.showTitles{
+    background-color:  #007a53;
+    padding: 10px;
+    border: 2px solid  white;
+    width: 200px;
+    color: white;
+    border-radius: 35px;
+    position: fixed;
+    top: 30px;
+
+}
+
+
+
 ::placeholder{
     color: gray;
 }
@@ -68,9 +84,14 @@
        
          
     }
+
+    .showTitles{
+       
+        width: 100px;
+        top: 20px;
     
-    
-    
+    }
+  
   }
 
  
