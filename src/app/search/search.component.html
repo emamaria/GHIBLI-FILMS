@@ -1,7 +1,12 @@
 <!-- <button (click)="click()">click</button> -->
 
 <div class="inputContainer">
-  <input type="text" #title (keyup.enter)="search()" />
+  <input
+    placeholder="Write a word of the following titles and press enter"
+    type="text"
+    #title
+    (keyup.enter)="search()"
+  />
 </div>
 
 <div class="titlesContainer">

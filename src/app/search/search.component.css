@@ -1,14 +1,18 @@
 .titlesContainer{
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    font-size: 20px;
+    font-family: monospace;
     flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color:  #007a53;
+    border-radius: 15px;
+   
 }
 
 .titlesContainer p{
-    margin: 30px;
+    margin: 20px;
 }
 
 .inputContainer{
@@ -22,11 +26,23 @@
 .inputContainer input{
     width: 400px;
     height: 45px;
-     background-color: aquamarine;
+     background-color: white;
      border-radius: 25px;
      margin-top: 60px;
      margin-bottom: 60px;
+     text-align: center;
+     font-size: 15px;
+     border: 2px solid gray;
+     
 
+}
+
+.inputContainer input:hover{
+   background-color:  lightcyan;
+}
+
+::placeholder{
+    color: gray;
 }
 
 
@@ -44,14 +60,17 @@
     }
 
     .inputContainer input{
-        width: 200px;
+        width: 250px;
         height: 25px;
-         background-color: aquamarine;
          margin-top: 10px;
          margin-bottom: 10px;
+         font-size: 11px;
+       
          
     }
     
     
     
   }
+
+ 
